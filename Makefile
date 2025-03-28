@@ -61,7 +61,7 @@ CUDA_STATIC_LIBS = -lcufft_static -lculibos
 
 ifeq ($(GENCODE_FLAGS),) # GENCODE_FLAGS {
 # Gencode arguments
-SMS ?= 35 50 52 60 61 70 75
+SMS ?= 60 61 70 75 86
 
 ifeq ($(SMS),) # SMS {
 $(error no SM architectures have been specified)
