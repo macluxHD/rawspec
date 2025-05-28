@@ -42,9 +42,9 @@ LINKH5:= $(LIBDIR_H5) -l $(LIBHDF5) -l $(LIBHDF5_HL)
 CUDA_DIR ?= $(CUDA_ROOT)
 CUDA_PATH ?= $(CUDA_DIR)
 
-CC            := gcc
-CXX           ?= g++
-HOST_COMPILER ?= $(CXX)
+CC            := gcc-13
+CXX           := g++-13
+HOST_COMPILER := $(CXX)
 NVCC          := $(CUDA_PATH)/bin/nvcc -ccbin $(HOST_COMPILER)
 
 CFLAGS = -ggdb -fPIC -I$(CUDA_PATH)/include $(INCDIR_H5)
